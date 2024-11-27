@@ -1,0 +1,67 @@
+### Project Manifest: Tinder-Style Recipe App
+
+#### Tech Stack
+- **Frontend**:
+  - Framework: React
+  - UI Library: Material-UI
+  - State Management: Redux
+  - Routing: React Router
+  - PWA: Enable Progressive Web App features
+
+- **Backend**:
+  - Framework: Node.js with Express
+  - Authentication: Firebase Authentication
+  - API: RESTful API with Express
+
+- **Database**:
+  - Database: Firebase Firestore
+  - Storage: Firebase Storage
+
+- **Hosting and Deployment**:
+  - Initial Hosting: Vercel for frontend
+  - Backend Hosting: Firebase Functions
+  - CI/CD: Integrate with GitHub for continuous deployment
+
+- **Security**:
+  - HTTPS: Default with Vercel and Firebase
+  - Input Validation: Use express-validator
+
+- **Additional Features**:
+  - Recipe Scraping: Cheerio in Node.js
+  - Duplicate Detection: Hashing mechanism
+
+#### Code Architecture
+- **Frontend Structure**:
+  - Components: Organize by feature (e.g., RecipeCard, SavedPage, PersonalPage)
+  - State: Use Redux for global state management
+  - Styles: Use Material-UI theming and styled components
+
+- **Backend Structure**:
+  - Routes: Define RESTful routes for recipes, user management, and authentication
+  - Controllers: Separate logic for handling requests
+  - Services: Implement business logic and interactions with Firebase
+
+- **Database Structure**:
+  - Collections: Users, Recipes, SavedRecipes
+  - Documents: Store user-specific data and recipe details
+
+- **Deployment**:
+  - Vercel: Connect to GitHub for frontend deployment
+  - Firebase Functions: Deploy backend logic
+
+#### Development Setup
+1. **Frontend**:
+   - Initialize React project with create-react-app
+   - Install dependencies: Material-UI, Redux, React Router
+
+2. **Backend**:
+   - Initialize Node.js project with Express
+   - Install Firebase Admin SDK and express-validator
+
+3. **Database and Authentication**:
+   - Configure Firebase project with Firestore and Authentication
+   - Integrate Firebase SDK in React app
+
+4. **Deployment**:
+   - Set up Vercel for frontend
+   - Deploy Firebase Functions using Firebase CLI
